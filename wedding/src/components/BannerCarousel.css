@@ -1,0 +1,12 @@
+.row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 30px 30px;
+}
+button{
+    z-index: 1;
+    background-color: transparent;
+    border: none;
+}
+  

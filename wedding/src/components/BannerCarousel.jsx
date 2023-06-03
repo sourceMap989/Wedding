@@ -4,6 +4,7 @@ import image2 from "../images/image2.jpg";
 import image3 from "../images/image3.jpg";
 import image4 from "../images/image4.jpg";
 import image5 from "../images/image5.jpg";
+import './BannerCarousel.css'
 
 const images = [image1, image2, image3, image4, image5];
 
@@ -33,9 +34,9 @@ const nextIndex = () =>
   );
 
   return (
-    <div>
+    <div className="row">
       <button onClick={previousIndex}>{'<'}</button>
-      <img src={activeImage} alt={`Image ${activeIndex}`} style={{ width: "100%", height: "100%", objectFit: "cover" }}/>
+      <img src={activeImage} alt={`Image ${activeIndex}`} style={{ width: "90%", height: "100%", objectFit: "cover" }}/>
       <button onClick={nextIndex}>{'>'}</button>
     </div>
   );

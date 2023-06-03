@@ -1,0 +1,32 @@
+/* react-tabs-custom.css */
+
+/* Style the tab list */
+.react-tabs .react-tabs__tab-list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    justify-content: space-evenly;
+  }
+  
+  /* Style the individual tabs */
+  .react-tabs .react-tabs__tab {
+    /* border: 1px solid; */
+    padding: 10px;
+    cursor: pointer;
+    background-color: none;
+    color:#1AA7EC;
+  }
+  
+  /* Style the selected tab */
+  .react-tabs .react-tabs__tab--selected {
+    background-color:#1AA7EC;
+    color: white;
+  }
+  
+  /* Style the tab panels */
+  .react-tabs .react-tabs__tab-panel {
+    padding: 20px;
+    /* border: 1px solid gray; */
+  }
+  
