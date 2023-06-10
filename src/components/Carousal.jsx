@@ -1,26 +1,15 @@
 import React, { useState, useEffect } from "react";
-import image1 from "../images/image1.jpg";
-import image2 from "../images/image2.jpg";
-import image3 from "../images/image3.jpg";
-import image4 from "../images/image4.jpg";
-import image5 from "../images/image5.jpg";
+// import image1 from "../images/image1.jpg";
+// import image2 from "../images/image2.jpg";
+// import image3 from "../images/image3.jpg";
+// import image4 from "../images/image4.jpg";
+// import image5 from "../images/image5.jpg";
 import './BannerCarousel.css'
 
-const images = [image1, image2, image3, image4, image5];
+// const images = [image1, image2, image3, image4, image5];
 
-const BannerCarousel = () => {
+const Carousal = ({images}) => {
   const [activeIndex, setActiveIndex] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setActiveIndex((prevIndex) =>
-        prevIndex === images.length - 1 ? 0 : prevIndex + 1
-      );
-    }, 2000);
-
-    return () => clearInterval(interval);
-  }, []);
-
   const activeImage = images[activeIndex];
 
   const previousIndex = () =>
@@ -34,14 +23,12 @@ const nextIndex = () =>
   );
 
   return (
-    <div className="background">
     <div className="row">
       <button onClick={previousIndex}>{'<'}</button>
       <img src={activeImage} alt={`Image ${activeIndex}`} style={{ width: "90%", height: "100%", objectFit: "cover" }}/>
       <button onClick={nextIndex}>{'>'}</button>
     </div>
-    </div>
   );
 };
 
-export default BannerCarousel;
+export default Carousal;

@@ -3,6 +3,7 @@ import "./Weds.css"
 
 import handright from "../img/handright.png";
 import hand from "../img/hand.svg";
+import heart from "../img/heart-solid.svg"
 
 function Weds() {
   return (
@@ -11,10 +12,10 @@ function Weds() {
      <img src={hand} alt='handright' className="imageleft"/>
     <div className="wrapper">
         <h3 className="heading"> Rajashekar</h3> 
-        Weds
+        <img  className="heart" src={heart} alt='heart'/>
         <h3>Aathmika</h3>
         </div>
-        <img src={handright} alt='handrigh0t'/>
+        <img  className="imageRight" src={handright} alt='handright'/>
         </div>
         </>
   )

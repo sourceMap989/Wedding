@@ -1,12 +1,12 @@
 import React from "react";
 import PropTypes from "prop-types";
-
+import './LiveStream.css'
 const LiveStream = ({ embedId }) => (
     
   <div className="video-responsive">
-    <h1>LIVE STREAMING</h1>
+    
     <iframe
-        width= "90%"
+        width= "100%"
         height= "100%"
       src={`https://www.youtube.com/embed/${embedId}`}
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
