@@ -13,7 +13,7 @@ button{
 }
 
 .background{
-        background-image: url('../img/light.jpg');
+        background-image: url('../img/bg.jpg');
         background-size: cover;
         background-repeat: no-repeat;  
         height:480px;
