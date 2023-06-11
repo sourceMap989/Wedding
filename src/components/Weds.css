@@ -22,9 +22,8 @@
 .main{
     display: flex;
     flex-direction: row;
-    margin: 30px 100px;
-    background-color: #E7D2FF;
     position: relative;
+    padding: 120px;
     
 }
 h3{
@@ -40,6 +39,13 @@ h3{
 }
 .heart svg{
     fill: #FF0000;
+}
+.main{
+    background-image: url('../img/blue.jpg');
+    background-size: cover;
+    background-repeat: no-repeat; 
+    height:480px;
+    width:1263px;
 }
 
 @media screen and (max-width:400px){
@@ -62,12 +68,14 @@ h3{
        
     }
     .main{
-      width:250px;
+        height:200px;
+    width:fit-content;
     }
 }
 @media screen and (max-width:800px){
     .main{
-        width:250px;
+        height:200px;
+        width:fit-content;
       }
     .imageleft{
         height:100px;

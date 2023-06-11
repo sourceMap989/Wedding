@@ -28,9 +28,18 @@
   .react-tabs .react-tabs__tab-panel {
     /* padding: 20px; */
     /* border: 1px solid gray; */
-    margin-top: -90px;
+ 
   }
   h1{
-    margin-top: 100px;
+    text-align:center;
+    margin: 0px;
+   
   }
+  .photoBack{
+    background-image: url('../img/bgCorosalDesk.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;  
+    height:500px;
+}
+
   

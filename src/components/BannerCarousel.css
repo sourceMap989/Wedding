@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    margin: 115px 0px;
+   padding: 125px 50px;
     height:260px;
     width:100%;
 }
@@ -13,7 +13,23 @@ button{
 }
 
 .background{
-    background-color:aqua
+        background-image: url('../img/light.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;  
+        height:480px;
 }
-
+@media screen and (max-width:400px){
+    .row{
+       padding: 125px 0px;
+        height:260px;
+        width:100%;
+    }
+}
+@media screen and (max-width:800px){
+    .row{
+       padding: 125px 0px;
+        height:260px;
+        width:100%;
+    }
+}
   

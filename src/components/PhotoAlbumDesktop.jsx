@@ -18,7 +18,7 @@ function PhotoAlbumDesktop() {
       setSelectedTab(index);
     };
     return (
-        <>
+        <div className="photoBack">
         <h1>PHOTO ALBUM</h1>
       <Tabs selectedIndex={selectedTab} onSelect={handleTabSelect}>
         <TabList>
@@ -37,7 +37,7 @@ function PhotoAlbumDesktop() {
           <Carousal images={tab3Images}/>
         </TabPanel>
       </Tabs>
-      </>
+      </div>
     );
   }
   

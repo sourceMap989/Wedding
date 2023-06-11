@@ -10,11 +10,9 @@ import "./footer.css"
 export default function Footer() {
   const year = new Date().getFullYear();
   return (
-    <div>
+    <div className="social-container">
      
-     
-
-      <p className="social-container">
+      <p >
         <a
           href="https://www.youtube.com"
           className="youtube social"
